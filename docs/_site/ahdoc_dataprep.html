@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="If you want to understand more detail about preparing datasets for upload, or if you want to merge and upload complex datasets,  these guidelines will be of ...">
+<meta name="keywords" content="getting_started,  getting_started">
+<title>Data Preparation for Pencil | Jekyll theme for documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="docs" href="http://0.0.0.0:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Texterity Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/texterity/" target="_blank">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Help<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:jps@texterity.com.au?subject=Jekyll documentation theme feedback&body=I have some feedback about the Data Preparation for Pencil page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Data Preparation for Pencil">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Data Preparation for Pencil</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">If you want to understand more detail about preparing datasets for upload, or if you want to merge and upload complex datasets,  these guidelines will be of help.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+   <p>Datasets can be uploaded either by direct database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.</p>
+
+<p>For a manually-loaded dataset, <a href="#" data-toggle="tooltip" data-original-title="">Pencil</a> requires input via a single data table (also called a ‘flat file’) in CSV format.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you’re planning on uploading a dataset through a flat file, make sure it has all the columns required to meet the proposed use case.</div>
+
+<h2 id="four-required-types-of-column">Four Required Types of Column</h2>
+<p>Pencil works best with data summarising events over time, where changes are driven by transactions. While the details will vary from case to case, transactional data will typically have:</p>
+<ol>
+  <li><strong>Date</strong>: a properly-formatted date</li>
+  <li><strong>Segment</strong> (e.g. department, product type, customer category, etc)</li>
+  <li><strong>Measure</strong> (e.g. number of sales or units or kilometers)</li>
+  <li><strong>Unique value/s</strong> (optional columns containing identifiers such as Product ID, Basket ID, Item Type, etc)</li>
+</ol>
+
+<p>The first three of these are mandatory – if you don’t have at least one of each of these types, the dataset will be rejected. <br />
+Data sets usually also have a range of unique identifiers as well.
+When datasets are loaded each column is classified as one of these types.</p>
+<figure><img class="docimage" src="images/column_summary.png" alt="Column Summary" /><figcaption>Column summary showing types of columns uploaded</figcaption></figure>
+
+<h3 id="file-size">File Size</h3>
+<p>The recommended file size limit for flat-file upload is 2Gb. There is no hard limit on larger file uploads but for very large files, upload times become a factor. If larger file uploads are regularly required then transfer via direct database connection is strongly recommended.</p>
+<h3 id="data-quality">Data Quality</h3>
+<p>Good quality data forms the foundation of reliable and accurate insights - the popular saying “garbage in, garbage out” applies to Pencil uploads also!  So for the best results, follow these guidelines.</p>
+<h3 id="data-integrity">Data Integrity</h3>
+<ul>
+  <li>In flat file uploads, the delimiter and any quotation marks used should not conflict with data values</li>
+  <li>Header rows / column names must be included</li>
+  <li>Records (i.e. rows) ought not to be duplicated.
+Valid Formats, Field Entries and Column Names</li>
+  <li>Date field must be formatted as “YYYY-MM-DD”</li>
+  <li>Numeric fields may not contain thousands-separator, special characters or currency signs (e.g. <comma>, %, #, AUD) which should be removed from numeric fields prior to data load.</comma></li>
+  <li>Consistent values in data (e.g. a single way of spelling company “ABC Pty. Ltd.” as opposed to also having “abc pty ltd”)</li>
+  <li>Do not include columns with significant proportion of missing values (e.g. columns that are more than 90% empty should be omitted.)</li>
+  <li>Columns with single unique attribute should be ommited (e.g. a customer status with only one value for “Active”)</li>
+  <li>Exclude unstructured data (e.g. tags, free form text should be removed. See Unsupported data section for some suggested treatment for different types of data).</li>
+</ul>
+
+<h3 id="numeric-columns">Numeric Columns</h3>
+<p>Numeric columns are typically the <strong>key performance indicators</strong> (KPIs) in the dataset. Examples include: revenue amount, asset balance amount, transaction amount, number of sales, amount of payments.</p>
+
+<p>However, not all numeric fields are KPIs. For examples, product unit price and customer tenure should be treated as segments as they are characteristics rather than performance measures.</p>
+
+<h3 id="unique-identifiers">Unique Identifiers</h3>
+<p>Anna supports more complicated calculations on unique identifiers -  such as ‘unique number of customers’. For example, instead of number of rows, a business would want to understand how many unique customers they have, which is calculated on-the-fly by Anna.</p>
+
+<h3 id="data-completeness">Data Completeness</h3>
+<p>Include all relevant data, both in terms of rows &amp; columns, required by the use case.
+For example, a payment dataset should include columns for:</p>
+<ul>
+  <li>payment day (date)</li>
+  <li>amount of payment (measure)</li>
+  <li>payment method (segment) &amp; product name (segment)</li>
+  <li>customer ID (unique identifier)</li>
+  <li>Store ID (unique identifier)</li>
+</ul>
+
+<h3 id="generating-top-insights">Generating Top Insights</h3>
+<p>One of Hyper Anna’s key features is Top Insights. For Top Insights to be generated, in addition to the above attributes, the dataset needs at least one date field with:</p>
+<ul>
+  <li>time-scales monthly or less (i.e. monthly, fortnightly, weekly or daily only)</li>
+  <li>at least four consecutive months of records.</li>
+</ul>
+
+<h2 id="using-natural-language-nl-descriptors">Using Natural Language (NL) Descriptors</h2>
+<p>Users interact with Anna using natural language (NL), so it is recommended that both column names and values ought to be as free of coded values and abbreviations, and be as descriptive as possible, so as to ensure the optimal NL experience to end-users.</p>
+
+<p>Often a source dataset will have:</p>
+<ul>
+  <li>Coded abbreviations such as department code, currency code, country code</li>
+  <li>System-generated product codes</li>
+  <li>Specialised terminology or jargon</li>
+</ul>
+
+<p>To enable natural language, these should be converted to a descriptive name so that they are intuitive for end-users.</p>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Use the column description as a basis for the column name, as it is often more natural-language-friendly than a system name</div>
+
+<p><strong>Also:</strong></p>
+<ul>
+  <li>It is highly recommended that column names be less than seven words</li>
+  <li>No special characters in column names (except underscore or space)</li>
+  <li>No number(s) at start of column names.</li>
+</ul>
+
+<p>Should coded column names be present, they need to be converted to their natural language equivalent as per the example below:</p>
+
+<figure><img class="docimage" src="images/NL_Headings.png" alt="Natural Language headings" /><figcaption>Converting system-generated headings to Natural Language equivalents</figcaption></figure>
+
+<h3 id="special-characters">Special characters</h3>
+<p>Column values containing special characters (e.g. &amp;, $, #, %) should be converted to include only alphanumeric characters, underscores and spaces.</p>
+
+<h3 id="data-dictionary">Data Dictionary</h3>
+<p>The Data Dictionary accompanies every data upload. It comprises two worksheets which provide entries describing every column name and data-source, along with a useful summary.  This is uploaded in PDF format and shows what the dataset contains, where it originated, and what the data is about. (Click <a href="http://#">here</a> to download a copy of the template.)</p>
+
+<h2 id="data-aggregation-advanced-topic">Data Aggregation (advanced topic)</h2>
+<p>In cases where data is required from different data sources, these data sources need to be <strong>aggregated</strong> into a single table, either through appending or merging rows (using a set of unique merging keys).</p>
+
+<p>Aggregated data can be used in Pencil provided the aggregation is consistent across the data set.</p>
+
+<p>Levels of detail for a data set are described in terms of ‘granularity’ where higher granularity means greater level of detail.</p>
+
+<p>When loading aggregated data, columns derived from a higher level of granularity should be removed to avoid data duplication. In other words all the data has to be entered at a consistent level of detail.</p>
+
+<h3 id="merging-multiple-data-sources">Merging Multiple Data Sources</h3>
+<p>When a use-case requires multiple core datasets with different levels of granularity, these first need to be aggregated to the same level of granularity (normally to the higher granularity) before performing the join.</p>
+
+<p>The recommended way to merge multiple data sources is as follows:</p>
+
+<p><strong>Step 1</strong>: Bearing the business use-case in mind, find the core dataset that contains the key numeric measure(s), date(s) and segments, at the level of granularity required by the use-case.</p>
+
+<p><strong>Step 2</strong>: Convert non-core datasets to the same level of granularity as the core dataset, then left-join with the core  dataset.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> the number of rows of the core dataset should be the same after joining with non-core datasets if the merging keys are unique</div>
+
+<p>See the following graphic for an example:</p>
+
+<figure><img class="docimage" src="images/Combine_Sources.png" alt="Combining Data Sources" /><figcaption>Combining data sources</figcaption></figure>
+
+<h3 id="unsupported-data-types-and-workarounds">Unsupported Data Types and Workarounds</h3>
+<p>The following data types are currently not supported in Pencil, and should be either transformed or removed prior to uploading:</p>
+<ul>
+  <li>Coded values</li>
+  <li>Detailed addresses</li>
+  <li>Tags</li>
+  <li>Unstructured data</li>
+</ul>
+
+<h4 id="coded-values">Coded Values</h4>
+<p>As mentioned above, column names or other coded values that are written as abbreviations or acronyms should be converted to the natural language equivalent in simple English.
+For example, instead of having country codes in three-letter acronyms, the full country name should be used to ensure a natural language experience.</p>
+
+<h4 id="address-detail">Address Detail</h4>
+<p>The suggested treatment for address detail is to use separate fields (columns) for suburbs, state and postcode, instead of entering the detail in a single field.</p>
+
+<h4 id="tags">Tags</h4>
+<p>Tags are typically used to associate data records with keywords, where one data record could be associated with multiple keywords (or tags), and the number of keywords may differ across records.</p>
+
+<p>Suggested treatment for tags is to select the most important keywords required by the use case and expand them into multiple columns with each column referring to one particular keyword.</p>
+
+<h4 id="unstructured-data">Unstructured Data</h4>
+
+<p><em>Unstructured data</em> is information that either does not have a pre-defined format (such as call-centre conversation logs). Unstructured information is typically text-heavy, but may contain data such as dates, numbers, and facts as well. This results in irregularities and ambiguities that make it difficult to understand using traditional programs as compared to data stored in fielded form in databases or annotated (semantically tagged) in documents.</p>
+
+<p>Anna/Pencil is not able to upload unstructured data of this kind.</p>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_getting_started.html" class="btn btn-default navbar-btn cursorNorm" role="button">getting_started</a>
+        
+        
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+<a target="_blank" href="https://github.com/Texterity/December/tree/master/docs/reviewspages/mydoc/ahdoc_dataprep.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2019 Texterity Documentation & Training. All rights reserved. <br />
+<span>Page last updated:</span> December 21 2018<br/> Site last generated: Jan 13, 2019 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
