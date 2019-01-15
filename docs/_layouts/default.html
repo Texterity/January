@@ -79,9 +79,7 @@
 <body>
 {% include topnav.html %}
 <!-- Page Content -->
-<div id="watermark">
-  <p id="bg-text">DRAFT</p>
-  </div>
+
 <div class="container">
   <div id="main">
     <!-- Content Row -->
@@ -96,6 +94,9 @@
         {% endunless %}
 
         <!-- Content Column -->
+        <div id="watermark">
+          <p id="bg-text">DRAFT</p>
+          </div>
         <div class="{{content_col_size}}" id="tg-sb-content">
             {{content}}
         </div>
