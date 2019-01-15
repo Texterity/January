@@ -53,6 +53,7 @@
     {% if page.datatable == true %}
     <!-- Include the standard DataTables bits -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <link rel ="stylesheet" type="text/css" href="theme-blue.css">
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
     <!-- First, this walks through the tables that occur between ...-begin
          and ...-end and add the "datatable" class to them.
@@ -72,14 +73,15 @@
     {% endif %}
 
   </div>
-<link rel ="theme-blue.css">
-      <div id="watermark">
-        <p id="bg-text">DRAFT</p>
-        </div>
+
+</link>
 </head>
 <body>
 {% include topnav.html %}
 <!-- Page Content -->
+<div id="watermark">
+  <p id="bg-text">DRAFT</p>
+  </div>
 <div class="container">
   <div id="main">
     <!-- Content Row -->
