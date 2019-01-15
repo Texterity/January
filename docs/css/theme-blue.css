@@ -42,7 +42,7 @@ a[data-toggle="tooltip"] {
 
 .navbar-inverse {
     background-color: #d6315a;
-    border-color: #015CAE;
+    border-color: #f0f0f0;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
     color: white;
