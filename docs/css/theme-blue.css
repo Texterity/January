@@ -88,6 +88,28 @@ a.navbar-brand:hover {
     border-color: #0f2340;
 }
 
+    background-color: #6cc;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.watermark {
+    position: absolute;
+    opacity: 0.25;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    #bg-text
+    color:lightgrey;
+    font-size:120px;
+    transform:rotate(300deg);
+    -webkit-transform:rotate(300deg);
+}
+}
+
 .printTitle {
     color: #015CAE !important;
 }
