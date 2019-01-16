@@ -115,7 +115,7 @@ li.sidebarTitle {
 .watermark {
     position: relative;
     opacity: 0.25;
-    font-size: 10em;
+    font-size: 4em;
     width: 100%;
     text-align: RIGHT;
     z-index: 1000;
