@@ -111,6 +111,14 @@ li.sidebarTitle {
     margin-left: 5px;
 
 }
+p {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
 .watermark {
     position: absolute;
     opacity: 0.25;
