@@ -88,13 +88,6 @@ a.navbar-brand:hover {
     border-color: #0f2340;
 }
 
-    background-color: #6cc;
-}
-
-body {
-    background-color: #ccc;
-}
-
 .watermark {
     position: absolute;
     opacity: 0.25;
