@@ -95,27 +95,21 @@ body {
     background-color: #ccc;
 }
 
-#background{
-    position:absolute;
-    z-index:0;
-    background:white;
-    display:block;
-    min-height:50%;
-    min-width:50%;
-    color:yellow;
+p {
+    background-color: #6cc;
 }
 
-#content{
-    position:absolute;
-    z-index:1;
+body {
+    background-color: #ccc;
 }
 
-#bg-text
-{
-    color:lightgrey;
-    font-size:120px;
-    transform:rotate(300deg);
-    -webkit-transform:rotate(300deg);
+.watermark {
+    position: absolute;
+    opacity: 0.25;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
 }
 
 .printTitle {
