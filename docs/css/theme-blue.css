@@ -111,6 +111,14 @@ li.sidebarTitle {
     margin-left: 5px;
 
 }
+.watermark {
+    position: absolute;
+    opacity: 0.25;
+    font-size: 4em;
+    width: 100%;
+    text-align: RIGHT;
+    z-index: 1000;
+}
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #015CAE;
