@@ -95,14 +95,6 @@ body {
     background-color: #ccc;
 }
 
-p {
-    background-color: #6cc;
-}
-
-body {
-    background-color: #ccc;
-}
-
 .watermark {
     position: absolute;
     opacity: 0.25;
