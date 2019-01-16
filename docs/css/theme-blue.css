@@ -95,7 +95,7 @@ body {
     background-color: #ccc;
 }
 
-#watermark{
+#background{
     position:absolute;
     z-index:0;
     background:white;
@@ -116,11 +116,6 @@ body {
     font-size:120px;
     transform:rotate(300deg);
     -webkit-transform:rotate(300deg);
-}
- color:lightgrey;
- font-size:120px;
- transform:rotate(300deg);
- -webkit-transform:rotate(300deg);
 }
 
 .printTitle {
