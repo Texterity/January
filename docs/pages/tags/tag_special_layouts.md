@@ -1,8 +1,8 @@
 ---
-title: "Special layout pages"
+title: Special layout pages
+permalink: tag_special_layouts.html
 tagName: special_layouts
 search: exclude
-permalink: tag_special_layouts.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

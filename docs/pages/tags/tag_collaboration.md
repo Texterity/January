@@ -1,11 +1,12 @@
 ---
-title: "Collaboration pages"
+title: Collaboration pages
+permalink: tag_collaboration.html
 tagName: collaboration
 search: exclude
-permalink: tag_collaboration.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
+
 {% include taglogic.html %}
 
 {% include links.html %}

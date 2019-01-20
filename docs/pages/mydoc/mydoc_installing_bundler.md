@@ -1,8 +1,8 @@
 ---
 title: Installing Bundler
+permalink: mydoc_installing_bundler.html
 published: false
 sidebar: mydoc_sidebar
-permalink: mydoc_installing_bundler.html
 folder: mydoc
 ---
 

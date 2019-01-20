@@ -1,17 +1,15 @@
 ---
 title: Sample 9 Topic
-keywords: sample
-summary: "This is just a sample topic..."
-sidebar: product2_sidebar
 permalink: p2_sample9.html
+keywords: sample
+summary: This is just a sample topic...
+sidebar: product2_sidebar
 complex_map: true
 map_name: usermapcomplex
 box_number: 2
 toc: false
 folder: product2
 ---
-
-
 
 ## Sample Content
 

@@ -1,11 +1,14 @@
 ---
 title: Data Preparation for Pencil
+permalink: ahdoc_dataprep.html
 keywords: getting_started
 last_updated: December 21 2018
-tags: [getting_started]
-summary: "If you want to understand more detail about preparing datasets for upload, or if you want to merge and upload complex datasets,  these guidelines will be of help."
+tags:
+- getting_started
+summary: If you want to understand more detail about preparing datasets for upload,
+  or if you want to merge and upload complex datasets,  these guidelines will be of
+  help.
 sidebar: ahdoc_sidebar
-permalink: ahdoc_dataprep.html
 folder: ahdoc
 ---
 

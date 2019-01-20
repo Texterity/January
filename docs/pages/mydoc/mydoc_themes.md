@@ -1,11 +1,14 @@
 ---
 title: Themes
-tags: [publishing]
+permalink: mydoc_themes.html
+tags:
+- publishing
 keywords: themes, styles, colors, css
 last_updated: July 3, 2016
-summary: "You can choose between two different themes (one green, the other blue) for your projects. The theme CSS is stored in the CSS folder and configured in the configuration file for each project."
+summary: You can choose between two different themes (one green, the other blue) for
+  your projects. The theme CSS is stored in the CSS folder and configured in the configuration
+  file for each project.
 sidebar: mydoc_sidebar
-permalink: mydoc_themes.html
 folder: mydoc
 ---
 
