@@ -12,7 +12,7 @@ sidebar: ahdoc_sidebar
 folder: ahdoc
 ---
 
-Datasets can be uploaded either by Direct Database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.csv}}">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.
+Datasets can be uploaded either by direct database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.csv}}">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.
 
 For a manually-loaded dataset, <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.pencil}}">Pencil</a> requires input via a single data table (also called a 'flat file') in CSV format.
 
