@@ -14,7 +14,7 @@ h4 {color: #808080; }
 }
 
 .nav > li.active > a {
-    background-color: #347DBE;
+    background: linear-gradient(to left, #243350 0%, #ab4b57 100%);
 }
 
 .nav > li > a:hover {
