@@ -1,10 +1,14 @@
 ---
-title:  "Welcome to Jekyll!"
-categories: jekyll update
+title: Welcome to Jekyll!
+date: 2016-02-24 00:00:00 Z
 permalink: myupdate.html
-tags: [news]
+categories:
+- docs
+- jekyll
+- update
+tags:
+- news
 ---
-
 
 Theme updates:
 

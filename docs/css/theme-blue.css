@@ -1,5 +1,5 @@
 .summary {
-    color: #808080;
+    color: #d6325a;
     border-left: 5px solid #ED1951;
     font-size:16px;
 }
@@ -20,7 +20,7 @@ h4 {color: #808080; }
 }
 
 .nav > li.active > a {
-    background-color: #347DBE;
+    background: linear-gradient(to left, #243350 0%, #ab4b57 100%);
 }
 
 .nav > li > a:hover {

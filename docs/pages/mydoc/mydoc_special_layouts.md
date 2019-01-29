@@ -1,14 +1,16 @@
 ---
 title: Special layouts overview
-tags: [special_layouts]
+permalink: mydoc_special_layouts.html
+tags:
+- special_layouts
 keywords: layouts, information design, presentation
 last_updated: July 3, 2016
-summary: "This theme has a few special layouts. Special layouts include the JS files they need directly in the page. The JavaScript for each special layout does not load by default for every page in the site."
+summary: This theme has a few special layouts. Special layouts include the JS files
+  they need directly in the page. The JavaScript for each special layout does not
+  load by default for every page in the site.
 sidebar: mydoc_sidebar
-permalink: mydoc_special_layouts.html
 folder: mydoc
 ---
-
 
 {% include note.html content="By \"layout,\" I'm not referring to the layouts in \_layouts in the project files. I'm referring to special ways of presenting information on the same \"page\" layout." %}
 
