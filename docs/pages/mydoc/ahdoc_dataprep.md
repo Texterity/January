@@ -12,7 +12,9 @@ sidebar: ahdoc_sidebar
 folder: ahdoc
 ---
 
-<div id="readingtime"> Estimated reading time 5 minutes</div>
+<span class="readingtime" title="Estimated reading time">
+Estimated reading time: 1 minute
+</span>
 
 Datasets can be uploaded either by direct database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.csv}}">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.
 
