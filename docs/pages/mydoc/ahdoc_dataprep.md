@@ -12,7 +12,7 @@ sidebar: ahdoc_sidebar
 folder: ahdoc
 ---
 
-<p style=".readingtime"> X Minute Read </style></p>
+<div style=".readingtime"> X Minute Read </div>
 
 Datasets can be uploaded either by direct database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.csv}}">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.
 
