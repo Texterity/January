@@ -21,7 +21,7 @@
 "tags": "getting_started",
 "keywords": "sample homepage",
 "url": "index.html",
-"summary": "These brief instructions will help you get started quickly with the theme. <b>Note the copy you're looking at here has been uploaded to this server for training purposes</b>."
+"summary": "These brief instructions will help you get started quickly with the theme. <b>Note the content you're looking at here has been uploaded to this server for training purposes and will soon be deleted.</b> The original repo is described below."
 }
 ,
 
@@ -939,39 +939,9 @@
 "url": "assetscssstyle.css",
 "summary": ""
 }
-,
 
 
 
-
-
-{
-"title": "Sample post",
-"tags": "newsgetting_started",
-"keywords": "",
-"url": "samplepost.html",
-"summary": "This is some summary frontmatter for my sample post."
-}
-,
-
-
-{
-"title": "Welcome to Jekyll!",
-"tags": "news",
-"keywords": "",
-"url": "myupdate.html",
-"summary": ""
-}
-,
-
-
-{
-"title": "Test post from last year",
-"tags": "news",
-"keywords": "",
-"url": "test-post-from-last-year.html",
-"summary": ""
-}
 
 
 

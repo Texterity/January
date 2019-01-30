@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="docs" href="http://0.0.0.0:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="docs" href="http://localhost:4000/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -93,6 +93,9 @@
     </script>
     
 
+  </div>
+
+</link>
 </head>
 <body>
 <!-- Navigation -->
@@ -208,6 +211,7 @@
 </nav>
 
 <!-- Page Content -->
+
 <div class="container">
   <div id="main">
     <!-- Content Row -->
@@ -726,10 +730,12 @@
         
 
         <!-- Content Column -->
+
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
    <h1 class="post-title-main">Generating PDFs</h1>
 </div>
+
 
 
 
@@ -738,6 +744,11 @@
    
     <div class="summary">You can generate a PDF from your Jekyll project. You do this by creating a web version of your project that is printer friendly. You then use utility called Prince to iterate through the pages and create a PDF from them. It works quite well and gives you complete control to customize the PDF output through CSS, including page directives and dynamic tags from Prince.</div>
    
+
+   <span class="readingtime" title="Estimated reading time">
+   Estimated reading time: 1-2 minutes
+   </span><br/>
+
 
     
     
@@ -763,6 +774,8 @@ $('#toc').on('click', 'a', function() {
 <div id="toc"></div>
 
     
+
+
 
    <h2 id="pdf-overview">PDF overview</h2>
 <p>This process for creating a PDF relies on Prince XML to transform the HTML content into PDF. Prince costs about $500 per license. That might seem like a lot, but if you’re creating a PDF, you’re probably working for a company that sells a product, so you likely have access to some resources. There’s also a free license that prints a small “P” watermark on your title page, so if you’re fine with that, great.</p>
@@ -1039,7 +1052,7 @@ prince <span class="nt">--javascript</span> <span class="nt">--input-list</span>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
     <span class="nx">Prince</span><span class="p">.</span><span class="nx">addScriptFunc</span><span class="p">(</span><span class="s2">"datestamp"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="s2">"PDF last generated: January 13, 2019"</span><span class="p">;</span>
+        <span class="k">return</span> <span class="s2">"PDF last generated: January 30, 2019"</span><span class="p">;</span>
     <span class="p">});</span>
 <span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
 </span>
@@ -1152,6 +1165,7 @@ javascript content here ...
 
 
 
+
     <div class="tags">
         
         <b>Tags: </b>
@@ -1179,7 +1193,7 @@ javascript content here ...
 
 
 
-<a target="_blank" href="https://github.com/Texterity/December/tree/master/docs/reviewspages/mydoc/mydoc_generating_pdfs.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+<a target="_blank" href="https://github.com/Texterity/January/blob/review/docs/pages/mydoc/mydoc_generating_pdfs.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
 
 
@@ -1189,7 +1203,7 @@ javascript content here ...
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 Texterity Documentation & Training. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jan 13, 2019 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jan 30, 2019 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
@@ -1197,12 +1211,13 @@ javascript content here ...
 
 
         </div>
+
+
     <!-- /.row -->
 </div>
 <!-- /.container -->
 </div>
 <!-- /#main -->
-    </div>
 
 </body>
 

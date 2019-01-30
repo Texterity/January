@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="docs" href="http://0.0.0.0:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="docs" href="http://localhost:4000/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -93,6 +93,9 @@
     </script>
     
 
+  </div>
+
+</link>
 </head>
 <body>
 <!-- Navigation -->
@@ -208,6 +211,7 @@
 </nav>
 
 <!-- Page Content -->
+
 <div class="container">
   <div id="main">
     <!-- Content Row -->
@@ -726,10 +730,12 @@
         
 
         <!-- Content Column -->
+
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
    <h1 class="post-title-main">Pushing builds to server</h1>
 </div>
+
 
 
 
@@ -738,6 +744,11 @@
    
     <div class="summary">You can push your build to AWS using commands from the command line. By including your copy commands in commands, you can package all of the build and deploy process into executable scripts.</div>
    
+
+   <span class="readingtime" title="Estimated reading time">
+   Estimated reading time: 1-2 minutes
+   </span><br/>
+
 
     
     
@@ -764,6 +775,8 @@ $('#toc').on('click', 'a', function() {
 
     
 
+
+
    <h2 id="pushing-to-aws-s3">Pushing to AWS S3</h2>
 
 <p>If you have the AWS Command Line Interface installed and are pushing your builds to AWS, the following commands show how you can build and push to an AWS location from the command line:</p>
@@ -786,6 +799,7 @@ aws s3 cp ~/users/tjohnson/projects/anotherdocproject2/ s3://[aws path]docpath/a
 
 
 
+
     <div class="tags">
         
         <b>Tags: </b>
@@ -805,7 +819,7 @@ aws s3 cp ~/users/tjohnson/projects/anotherdocproject2/ s3://[aws path]docpath/a
 
 
 
-<a target="_blank" href="https://github.com/Texterity/December/tree/master/docs/reviewspages/mydoc/mydoc_push_build_to_server.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+<a target="_blank" href="https://github.com/Texterity/January/blob/review/docs/pages/mydoc/mydoc_push_build_to_server.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
 
 
@@ -815,7 +829,7 @@ aws s3 cp ~/users/tjohnson/projects/anotherdocproject2/ s3://[aws path]docpath/a
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 Texterity Documentation & Training. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jan 13, 2019 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jan 30, 2019 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
@@ -823,12 +837,13 @@ aws s3 cp ~/users/tjohnson/projects/anotherdocproject2/ s3://[aws path]docpath/a
 
 
         </div>
+
+
     <!-- /.row -->
 </div>
 <!-- /.container -->
 </div>
 <!-- /#main -->
-    </div>
 
 </body>
 
