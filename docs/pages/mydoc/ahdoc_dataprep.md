@@ -8,6 +8,7 @@ tags:
 summary: If you want to understand more detail about preparing datasets for upload,
   or if you want to merge and upload complex datasets,  these guidelines will be of
   help.
+reading_time: 7
 sidebar: ahdoc_sidebar
 folder: ahdoc
 ---
