@@ -28,10 +28,6 @@ layout: default
 
 {% endif %}
 
-<span class="readingtime" title="Estimated reading time">
-Estimated reading time: {{page.reading_time}} minutes
-</span>
-
 
 <div class="post-content">
 
@@ -42,6 +38,9 @@ Estimated reading time: {{page.reading_time}} minutes
     {% include toc.html %}
     {% endunless %}
 
+    <span class="readingtime" title="Estimated reading time">
+    Estimated reading time: {{page.reading_time}} minutes
+    </span>
 
 
    {{content}}
