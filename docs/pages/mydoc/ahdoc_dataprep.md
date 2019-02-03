@@ -9,8 +9,8 @@ summary: If you want to understand more detail about preparing datasets for uplo
   or if you want to merge and upload complex datasets,  these guidelines will be of
   help.
 reading_time: '7'
-sidebar: ahdoc_sidebar
-folder: ahdoc
+sidebar: mydoc_sidebar
+folder: mydoc
 ---
 
 Datasets can be uploaded either by direct database connection, or via manual dataload of <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.csv}}">CSV</a> files. All of the data formatting requirements described here are applicable to both methods.
