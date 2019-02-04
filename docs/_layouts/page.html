@@ -35,9 +35,9 @@ layout: default
     <div class="summary">{{page.summary}}</div>
    {% endif %}
 
-   <span class="readingtime" title="Estimated reading time">
+   <p><span class="readingtime" title="Estimated reading time">
    Estimated reading time: {{page.reading_time}} minutes
-   </span>
+   </span></p>
 
     {% unless page.toc == false %}
     {% include toc.html %}
