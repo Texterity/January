@@ -16,16 +16,16 @@ h3 {color: #ED1951; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: linear-gradient(to left, #243350 0%, #ab4b57 100%);
+    background-color: #516F93;
     color: white;
 }
 
 .nav > li.active > a {
-    background: linear-gradient(to left, #243350 0%, #ab4b57 100%);
+    background: #516F93;
 }
 
 .nav > li > a:hover {
-    background-color: linear-gradient(to left, #243350 0%, #ab4b57 100%);
+    background-color: #516F93;
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
