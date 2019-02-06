@@ -50,15 +50,15 @@ a[data-toggle="tooltip"] {
     border-color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
-    color: white;
+    color: black;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
-     color: #f0f0f0;
+     color: #ae6a77;
 }
 
 a.navbar-brand:hover {
-  color: #f0f0f0;
+  color: #ae6a77;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -76,7 +76,7 @@ a.navbar-brand:hover {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #0f2340;
+    background-color: #ae6a77;
     border-color: #347DBE;
 }
 
@@ -89,7 +89,7 @@ a.navbar-brand:hover {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #0f2340;
+    background-color: #ae6a77;
     border-color: #0f2340;
 }
 
@@ -130,6 +130,7 @@ li.sidebarTitle {
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #ae6a77;
+	color: #ffffff;
 }
 
 .navbar-inverse .navbar-toggle {
