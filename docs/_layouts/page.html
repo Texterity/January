@@ -36,7 +36,9 @@ layout: default
    {% endif %}
 
    <p><span class="readingtime" title="Estimated reading time">
-   Estimated reading time: {{page.reading_time}} minutes
+   {% if page.reading_time != '0' %}
+    Estimated reading time: {{page.reading_time}} minutes
+   {% endif %}
    </span></p>
 
     {% unless page.toc == false %}
