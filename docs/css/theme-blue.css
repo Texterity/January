@@ -35,7 +35,7 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
 
 .nav li.thirdlevel > a {
     background-color: #FAFAFA !important;
-    color: #0f2340;
+    color: maroon;
     font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #d6315a;
+    background-color: #5f023a;
     border-color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
