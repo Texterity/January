@@ -25,7 +25,7 @@ h4 {color: #808080; }
 }
 
 .nav > li > a:hover {
-    background-color: #248ec2;
+    background-color: linear-gradient(to left, #243350 0%, #ab4b57 100%);
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
