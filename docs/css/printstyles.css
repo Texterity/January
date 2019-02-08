@@ -89,7 +89,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 }
 
 
-body.title { page: Texterity }
+body.title { page: title }
 
 @page title {
     @top-left {
