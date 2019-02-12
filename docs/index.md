@@ -1,18 +1,4 @@
 ---
-title: Getting started with the Documentation Theme for Jekyll
-permalink: index.html
-keywords: sample homepage
-tags:
-- getting_started
-sidebar: mydoc_sidebar
-<<<<<<< HEAD
-permalink: index.html
-summary: These brief instructions will help you get started quickly with the theme. <b>Note the content you're looking at here has been uploaded to this server for training purposes and will soon be deleted.</b> The original repo is described below. 13 Feb - this update has been added for demo purposes.
-=======
-summary: These brief instructions will help you get started quickly with the theme.
-  <b>Note the content you're looking at here has been uploaded to this server for
-  training purposes and will soon be deleted.</b> The original repo is described below.
->>>>>>> master
 ---
 
 {% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I  have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
