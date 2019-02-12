@@ -1,11 +1,12 @@
 ---
-title: "Single sourcing pages"
+title: Single sourcing pages
+permalink: tag_single_sourcing.html
 tagName: single_sourcing
 search: exclude
-permalink: tag_single_sourcing.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
+
 {% include taglogic.html %}
 
 {% include links.html %}

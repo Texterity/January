@@ -3,7 +3,6 @@ layout: none
 search: exclude
 ---
 
-
  {% assign sidebar = site.data.sidebars[site.pdf_sidebar].entries %}
 
    {% for entry in sidebar %}

@@ -31,7 +31,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 @page {
     margin: 60pt 90pt 60pt 90pt;
-    font-family: sans-serif;
+    font-family: 'Roboto'sans-serif;
     font-style:none;
     color: gray;
 
@@ -121,7 +121,7 @@ body.frontmatter {counter-reset: page 1}
         content: counter(page, lower-roman);
     }
     @bottom-left {
-        content: "youremail@domain.com";   }
+        content: "jps@dynamicdata.com.au";   }
 }
 
 body.first_page {counter-reset: page 1}
