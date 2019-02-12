@@ -46,7 +46,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background: linear-gradient(to right, #243350 0%, #ab4b57 100%);
+    background-color: #ab4753;
     border-color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
@@ -58,7 +58,7 @@ a[data-toggle="tooltip"] {
 }
 
 a.navbar-brand:hover {
-  color: ae6a77;
+  color: #ae6a77;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -89,7 +89,7 @@ a.navbar-brand:hover {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: ##43CFD8;
+    background-color: #ae6a77;
     border-color: #0f2340;
 }
 
