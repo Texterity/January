@@ -10,6 +10,7 @@ last_updated: July 16, 2016
 summary: This theme primarily uses pages. You need to make sure your pages have the
   appropriate frontmatter. One frontmatter tag your users might find helpful is the
   summary tag. This functions similar in purpose to the shortdesc element in DITA.
+reading_time: '10'
 sidebar: mydoc_sidebar
 folder: mydoc
 ---
