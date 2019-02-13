@@ -46,7 +46,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background: linear-gradient(to right, #243350 0%, #ab4b57 100%);
+    background: linear-gradient(to left, #243350 0%, #ab4b57 100%);
     border-color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
